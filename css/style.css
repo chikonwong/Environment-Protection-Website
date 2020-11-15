@@ -33,15 +33,16 @@ h1 h2{
 
 /* This is nav css */
 #nav{
+    text-align: center;
 }
 
 #nav ul{
+    display: inline-block;
     border: 10px;
     list-style-type:none ;
     overflow: hidden;
-    width: 40%;
-    margin: auto;
-    padding-inline-start: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 #nav li{
