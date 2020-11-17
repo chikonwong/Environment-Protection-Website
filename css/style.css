@@ -1,8 +1,4 @@
-html{
-
-}
-
-body{
+html body{
     margin: 0;
     border: 0;
     padding: 0;
@@ -10,76 +6,103 @@ body{
 }
 
 
-
-#header h1{
-    text-align: center;
-    
-}
-
 #container{
     text-align: center;
 }  
 
 
+
 h1 h2{
-    margin: 0;
-    border: 0;
+
     padding: 10px;
-}
-
-/* This is nav css */
-#nav ul {  
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #5f5f5f;
-
-} 
-
-#nav li {
-    float: left;
-    
-}
-#nav li a {
-    display: block;
-    padding: 16px;   
-    text-decoration: none;
-    color: #f5f5f5;
-
-
-}
-#nav li a:hover {
-    background-color: #333;
 }
 
 @media screen and (max-width: 400px){
     #header h1{
         margin: 15px;
     }
+}
+/* This is nav css */
+#nav{
+    background-color: #5f5f5f;
+    
+}
+
+#nav ul {  
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+} 
+
+#nav li {
+    float: left;
+}
+#nav li a {
+    display: block;
+    padding: 14px 16px;   
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 20px;
+    
+}
+#nav li a:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width: 400px){
     #nav ul{
         display: none;
     }
-    #footer{
-        display: none;
-    }
+    
+}
+
+/* This is mathod dropdown */
+
+.dropd-content {
+    display: none;
+    position: absolute;
+    background-color: #5f5f5f;
+    
+}
+
+.dropd-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropd:hover .dropd-content{
+    display: block;
 }
 
 
 /* This is content css */
 
 
+
+
+
 /* This is footr css */
 #footer{
     background-color: #5f5f5f;
     color: #f5f5f5;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     /* sticky footer */
     position:fixed;
     bottom:0;
     width: 100%;    
+}
+
+
+@media screen and (max-width: 400px){
+    #footer{
+        display: none;
+    }
 }
 
 
