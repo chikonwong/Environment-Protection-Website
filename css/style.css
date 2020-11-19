@@ -13,7 +13,6 @@ html body{
 
 
 h1 h2{
-
     padding: 10px;
 }
 
@@ -25,7 +24,7 @@ h1 h2{
 /* This is nav css */
 #nav{
     background-color: #5f5f5f;
-    
+    height: 52px;
 }
 
 #nav ul {  
