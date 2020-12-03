@@ -23,7 +23,7 @@
                     <a href="index.html">主頁</a>
                 </li>
                 <li>
-                    <a href="methods.html">方法</a>
+                    <a href="methods.html">保護環境的方法</a>
                 </li>
                 <li>
                     <a href="joinus.html">加入我們</a>
@@ -37,7 +37,7 @@
         <div id="content">
             <h2>加入我們的FB谷</br>
                 在填資料後會有專人聯絡你</h2>
-            <form class="f1">
+            <form>
                 <table>
                     <tr>
                         <th>
@@ -62,7 +62,7 @@
                             <label for="tel">電話：</label>
                         </th>
                         <th>
-                            <input type="text" name="tel" id="tel" size="30px" />
+                            <input type="text" name="tel" id="tel" size="30px" max="8" pattern="^[0-9]{8}$"  title="請輸入8位電話號碼" required="required"/>
                         </th>
                     </tr>
                     <tr>
@@ -90,7 +90,7 @@
                 <input type="submit" value="Submit" />
             </form>
         </div>
-        
+
         <div id="footer">
             Copyright &copy; WONG Chik On 2020. All rights reserved
         </div>

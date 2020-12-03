@@ -4,3 +4,20 @@
     padding-right: 300px;
     padding-bottom: 10px;
 }
+
+@media screen and (max-width: 1400px) {
+    .content{
+
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .content{
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

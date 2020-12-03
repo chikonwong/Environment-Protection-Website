@@ -5,12 +5,13 @@
     <title>保護環境協會</title>
     <link rel="icon" href="./src/planet-earth.png">
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/index_style.css" />
+    <link rel="stylesheet" href="./css/test_style.css" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/test_script.js"></script>
 </head>
 
-<body>
+<body onload="startform()">
     <div id="container">
         <div id="header">
             <img src="./src/3816397.jpg" height="100px" width="100px" />
@@ -22,7 +23,7 @@
                     <a href="index.html">主頁</a>
                 </li>
                 <li>
-                    <a href="methods.html">方法</a>
+                    <a href="methods.html">保護環境的方法</a>
                 </li>
                 <li>
                     <a href="joinus.html">加入我們</a>
@@ -33,7 +34,115 @@
             </ul>
         </div>
         <div class="content">
-            <form action=""></form>
+            <form name="f2">
+                <table>
+                    <tr>
+                        <th>
+                            膠樽：
+                        </th>
+                        <th>
+                            <input type="number" name="plastic-bottle" min="0"  onchange="total_mark()"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            鋁罐：
+                        </th>
+                        <th>
+                            <input type="text" name="aluminium-cans" min="0" onchange="total_mark()">
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            廢紙：
+                        </th>
+                        <th>
+                            <select name="paper"  onchange="total_mark()">
+                                <option value="1">
+                                    1
+                                </option>
+                                <option value="2">
+                                    2
+                                </option>
+                                <option value="3">
+                                    3
+                                </option>
+                                <option value="4">
+                                    4
+                                </option>
+                                <option value="5">
+                                    5
+                                </option>
+                                <option value="6">
+                                    6
+                                </option>
+                                <option value="7">
+                                    7
+                                </option>
+                                <option value="8">
+                                    8
+                                </option>
+
+                                <option value="9">
+                                    9
+                                </option>
+                                <option value="10">
+                                    10
+                                </option>
+                            </select>
+
+                        </th>
+
+                    </tr>
+                    <tr>
+                        <th>
+                            玻璃樽：
+                        </th>
+                        <th>
+                            <input type="radio" name="glass-bottle" value="1" onchange="total_mark()">
+                            1
+                            </br>
+                            <input type="radio" name="glass-bottle" value="2" onchange="total_mark()">
+                            2
+                            </br>
+                            <input type="radio" name="glass-bottle" value="3" onchange="total_mark()">
+                            3
+                            </br>
+                            <input type="radio" name="glass-bottle" value="4" onchange="total_mark()">
+                            4
+                            </br>
+                            <input type="radio" name="glass-bottle" value="5" onchange="total_mark()">
+                            5
+                            </br>
+                            <input type="radio" name="glass-bottle" value="6" onchange="total_mark()">
+                            6
+                            </br>
+                            <input type="radio" name="glass-bottle" value="7" onchange="total_mark()">
+                            7
+                            </br>
+                            <input type="radio" name="glass-bottle" value="8" onchange="total_mark()">
+                            8
+                            </br>
+                            <input type="radio" name="glass-bottle" value="9" onchange="total_mark()">
+                            9
+                            </br>
+                            <input type="radio" name="glass-bottle" value="10" onchange="total_mark()">
+                            10
+                            </br>
+
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            分數：
+                        </th>
+                        <th>
+                            <input type="text" name="mark"/>
+                        </th>
+                    </tr>
+                </table>
+                <input type="submit" value="submit">
+            </form>
 
         </div>
         <div id="footer">
