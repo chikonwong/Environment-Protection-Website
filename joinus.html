@@ -2,8 +2,10 @@
 <html>
 
 <head>
-    <title>Environmental Protection</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>保護環境協會</title>
+    <link rel="icon" href="./src/planet-earth.png">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/joinus_style.css" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -12,48 +14,84 @@
 <body>
     <div id="container">
         <div id="header">
-            <h1>
-                Environmental Protection
-            </h1>
+            <img src="./src/3816397.jpg" height="100px" width="100px" />
+            <h1>保護環境協會</h1>
         </div>
-
         <div id="nav">
             <ul>
                 <li>
-                    <a href="index.html">Background</a>
-                </li>
-                <li class="dropd">
-                    <a href="methods.html" class="dropbtn">Methods</a>
-                    <div class="dropd-content">
-                        <a href="#">Method1</a>
-                        <a href="#">Method2</a>
-                        <a href="#">Method3</a>
-                    </div>
+                    <a href="index.html">主頁</a>
                 </li>
                 <li>
-                    <a href="joinus.html">Join Us</a>
+                    <a href="methods.html">方法</a>
+                </li>
+                <li>
+                    <a href="joinus.html">加入我們</a>
+                </li>
+                <li>
+                    <a href="test.html">小小測驗</a>
                 </li>
             </ul>
-
-
         </div>
 
+        <div id="content">
+            <h2>加入我們的FB谷</h2>
+            <form class="f1">
+                <table>
+                    <tr>
+                        <th>
+                            <label for="name">姓名：</label>
+                        </th>
+                        <th>
+                            <input type="text" name="name" id="name" required="required" size="30px" /><span
+                                class="required-field">*</span>
+                        </th>
+                    </tr> 
+                    <tr>
 
-        <div id="contact">
-            <h2>Contact us</h2>
-            <form>
-                <!-- input name -->
-                <label for="name">Name</label></br>
-                <input type="text" name="name" />
-                <!-- input email -->
-                <label for="email">Email</label></br>
-                <input type="email" name="email" />
-                <!-- input phone number -->
-                <label for="phone">Phone Number</label><br>
-                <input type="text" name="tel" />
-                <!-- submit button -->
-                <input type="button" name="">
+                        <th>
+                            <label for="email">電郵：</label>
+                        </th>
+                        <th>
+                            <input type="email" name="email" id="email" required="required" size="30px"/><span
+                                class="required-field">*</span>
+                        </th>
+                    </tr>
+                    <tr>
+
+                        <th>
+                            <label for="tel">電話：</label>
+                        </th>
+                        <th>
+                            <input type="text" name="tel" id="tel" size="30px"/>
+                        </th>
+                    </tr>
+                    <tr>
+
+                        <th><label for="gender">性別：</label></th>
+                        <th>
+                            <input type="radio" name="gender" value="M" required="required" id="gender" />男
+                            <input type="radio" name="gender" value="F" id="gender" />女
+                            <input type="radio" name="gender" value="N" id="gender" />不提供
+                        </th>
+                    </tr>
+                    <tr>
+
+                        <th>
+                            <label for="self-intro">自我介紹：</label>
+                        </th>
+                        <th>
+                            <textarea name="self-intro" id="self-intro" rows="4" cols="20"></textarea>
+                            <span class="required-field">*</span>
+                        </th>
+                    </tr>
+
+
+                </table>
+                <input type="submit" value="Submit" />
+
             </form>
+            <p>在填資料後會有專人聯絡你</p>
 
         </div>
 

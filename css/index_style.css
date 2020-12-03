@@ -1,0 +1,14 @@
+/* This is content css */
+
+article {
+    text-align: left;
+
+    padding-left: 300px;
+    padding-right: 300px;
+    column-count: 3;
+    column-gap: 15px;
+    column-span: all;
+
+    display: inline-flex;
+
+}
