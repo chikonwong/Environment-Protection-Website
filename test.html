@@ -34,14 +34,14 @@
             </ul>
         </div>
         <div class="content">
-            <form name="f2">
+            <form name="f2" onSubmit="print_result()">
                 <table>
                     <tr>
                         <th>
                             膠樽：
                         </th>
                         <th>
-                            <input type="number" name="plastic-bottle" min="0"  onchange="total_mark()"/>
+                            <input type="number" name="plastic_bottle" min="0" onchange="total_mark()" />
                         </th>
                     </tr>
                     <tr>
@@ -49,7 +49,7 @@
                             鋁罐：
                         </th>
                         <th>
-                            <input type="text" name="aluminium-cans" min="0" onchange="total_mark()">
+                            <input type="text" name="cans" min="0" onchange="total_mark()" >
                         </th>
                     </tr>
                     <tr>
@@ -57,7 +57,10 @@
                             廢紙：
                         </th>
                         <th>
-                            <select name="paper"  onchange="total_mark()">
+                            <select name="Paper" onchange="total_mark()">
+                                <option value="0">
+                                    0
+                                </option>
                                 <option value="1">
                                     1
                                 </option>
@@ -99,34 +102,37 @@
                             玻璃樽：
                         </th>
                         <th>
-                            <input type="radio" name="glass-bottle" value="1" onchange="total_mark()">
+                            <input type="radio" name="glass_bottle" value="0" onclick="total_mark()" checked="checked">
+                            0
+                            </br>
+                            <input type="radio" name="glass_bottle" value="1" onclick="total_mark()">
                             1
                             </br>
-                            <input type="radio" name="glass-bottle" value="2" onchange="total_mark()">
+                            <input type="radio" name="glass_bottle" value="2" onclick="total_mark()">
                             2
                             </br>
-                            <input type="radio" name="glass-bottle" value="3" onchange="total_mark()">
+                            <input type="radio" name="glass_bottle" value="3" onclick="total_mark()">
                             3
                             </br>
-                            <input type="radio" name="glass-bottle" value="4" onchange="total_mark()">
+                            <input type="radio" name="glass_bottle" value="4" onclick="total_mark()">
                             4
                             </br>
-                            <input type="radio" name="glass-bottle" value="5" onchange="total_mark()">
+                            <input type="radio" name="glass_bottle" value="5" onclick="total_mark()">
                             5
                             </br>
-                            <input type="radio" name="glass-bottle" value="6" onchange="total_mark()">
+                            <input type="radio" name="glass_bottle" value="6" onclick="total_mark()">
                             6
                             </br>
-                            <input type="radio" name="glass-bottle" value="7" onchange="total_mark()">
+                            <input type="radio" name="glass_bottle" value="7" onclick="total_mark()">
                             7
                             </br>
-                            <input type="radio" name="glass-bottle" value="8" onchange="total_mark()">
+                            <input type="radio" name="glass_bottle" value="8" onclick="total_mark()">
                             8
                             </br>
-                            <input type="radio" name="glass-bottle" value="9" onchange="total_mark()">
+                            <input type="radio" name="glass_bottle" value="9" onclick="total_mark()">
                             9
                             </br>
-                            <input type="radio" name="glass-bottle" value="10" onchange="total_mark()">
+                            <input type="radio" name="glass_bottle" value="10" onclick="total_mark()">
                             10
                             </br>
 
@@ -137,11 +143,11 @@
                             分數：
                         </th>
                         <th>
-                            <input type="text" name="mark"/>
+                            <input type="text" name="mark" value="0" />
                         </th>
                     </tr>
                 </table>
-                <input type="submit" value="submit">
+                <input type="submit" value="Submit" name="submit">
             </form>
 
         </div>
