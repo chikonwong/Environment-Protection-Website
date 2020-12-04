@@ -10,25 +10,21 @@ input[type=number] {
     height: 20px;
     border-style: solid;
     font-size: 20px;
-
 }
+
 input[type=text] {
     text-align: left;
     height: 20px;
     border-style: solid;
     font-size: 20px;
-
 }
 
-select{
+select {
     text-align: left;
     height: 20px;
     border-style: solid;
     font-size: 20px;
-
-
 }
-
 
 input[type=submit] {
     border: none;
@@ -42,5 +38,4 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #333;
-
 }

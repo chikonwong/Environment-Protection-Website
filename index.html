@@ -6,17 +6,21 @@
     <link rel="icon" href="./src/planet-earth.png">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/index_style.css" />
+    <script src="https://kit.fontawesome.com/f712179d31.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
     <div id="container">
+        <!-- header -->
         <div id="header">
             <img src="./src/3816397.jpg" height="100px" width="100px" />
             <h1>保護環境協會</h1>
         </div>
-        <div id="nav">
+        <!-- normal nav -->
+        <div id="n-nav">
             <ul>
                 <li>
                     <a href="index.html">主頁</a>
@@ -32,6 +36,19 @@
                 </li>
             </ul>
         </div>
+        <!-- mobile nav -->
+        <div id="m-nav">
+            <a href="index.html" class="active">保護環境協會</a>
+            <div id="dp-nav">
+                <a href="methods.html">保護環境的方法</a>
+                <a href="joinus.html">加入我們</a>
+                <a href="test.html">小小測驗</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <!-- content part -->
         <div class="content">
             <h3>為什麼要環境保護呢??</h3>
             <video width="780" height="auto" controls autoplay>
@@ -49,10 +66,9 @@
                 <p>
                     環境問題也造成生物嚴重破壞，許多生物以絕種或者是瀕臨絕種....等等的問題，影響到環境的平衡，造成日後對人類生活的影響。
                 </p>
-
             </article>
-
         </div>
+        <!-- footer -->
         <div id="footer">
             Copyright &copy; WONG Chik On 2020. All rights reserved
         </div>

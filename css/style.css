@@ -11,11 +11,6 @@ html body {
     padding-bottom: 40px;
 }
 
-#header {
-    font-size: 20px;
-    padding: 10px;
-}
-
 #header img {
     padding-top: 10px;
 }
@@ -24,21 +19,20 @@ html body {
     margin: 10px;
 }
 
-
-
-@media screen and (max-width: 400px) {
-    #header h1 {
-        margin: 15px;
+@media screen and (max-width: 500px) {
+    #header {
+        display: none;
     }
+
 }
 
 /* nav css */
-#nav {
+#n-nav {
     background-color: #5f5f5f;
     height: 57px;
 }
 
-#nav ul {
+#n-nav ul {
     display: inline-block;
     list-style-type: none;
     margin: 0;
@@ -46,11 +40,11 @@ html body {
     overflow: hidden;
 }
 
-#nav li {
+#n-nav li {
     float: left;
 }
 
-#nav li a {
+#n-nav li a {
     display: block;
     padding: 14px 16px;
     text-decoration: none;
@@ -59,14 +53,48 @@ html body {
 
 }
 
-#nav li a:hover {
+#n-nav li a:hover {
     background-color: #333;
 
 }
+#m-nav{
+    display: none;
+}
 
-@media screen and (max-width: 400px) {
-    #nav ul {
+@media screen and (max-width: 500px) {
+    #m-nav{
+        display: block;
+    }
+    #n-nav {
         display: none;
+    }
+
+    #m-nav {
+        overflow: hidden;
+        background-color:#5f5f5f;
+        position: relative;
+        text-align: left;
+    }
+
+    #m-nav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    #m-nav #dp-nav a{
+        text-align: center;
+    }
+
+    #m-nav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 25px;
     }
 
 }
@@ -91,7 +119,7 @@ html body {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     #footer {
         display: none;
     }

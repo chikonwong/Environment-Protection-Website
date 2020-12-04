@@ -1,6 +1,26 @@
-.content{
+.content {
     text-align: left;
     padding-left: 300px;
     padding-right: 300px;
     padding-bottom: 10px;
+}
+
+.img1 {
+    max-width: 200px;
+    height: auto;
+    float: right;
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .img1 {
+        display: none;
+    }
+
 }

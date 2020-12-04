@@ -6,18 +6,22 @@
     <link rel="icon" href="./src/planet-earth.png">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/joinus_style.css" />
+    <script src="https://kit.fontawesome.com/f712179d31.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/script.js"></script>
 </head>
 
 
 <body>
     <div id="container">
+        <!-- header -->
         <div id="header">
             <img src="./src/3816397.jpg" height="100px" width="100px" />
             <h1>保護環境協會</h1>
         </div>
-        <div id="nav">
+        <!-- normal nav -->
+        <div id="n-nav">
             <ul>
                 <li>
                     <a href="index.html">主頁</a>
@@ -33,10 +37,22 @@
                 </li>
             </ul>
         </div>
-
-        <div id="content">
-            <h2>加入我們的FB谷</br>
-                在填資料後會有專人聯絡你</h2>
+        <!-- mobile nav -->
+        <div id="m-nav">
+            <a href="index.html" class="active">保護環境協會</a>
+            <div id="dp-nav">
+                <a href="methods.html">保護環境的方法</a>
+                <a href="joinus.html">加入我們</a>
+                <a href="test.html">小小測驗</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <!-- content part -->
+        <div class="content">
+            <h3>加入我們的FB谷</br>
+                在填資料後會有專人聯絡你</h3>
             <form>
                 <table>
                     <tr>
@@ -44,7 +60,7 @@
                             <label for="name">姓名：</label>
                         </th>
                         <th>
-                            <input type="text" name="name" id="name" required="required" size="30px" /><span
+                            <input type="text" name="name" id="name" required="required" size="20px" /><span
                                 class="required-field">*</span>
                         </th>
                     </tr>
@@ -53,7 +69,7 @@
                             <label for="email">電郵：</label>
                         </th>
                         <th>
-                            <input type="email" name="email" id="email" required="required" size="30px" /><span
+                            <input type="email" name="email" id="email" required="required" size="20px" /><span
                                 class="required-field">*</span>
                         </th>
                     </tr>
@@ -62,7 +78,8 @@
                             <label for="tel">電話：</label>
                         </th>
                         <th>
-                            <input type="text" name="tel" id="tel" size="30px" max="8" pattern="^[0-9]{8}$"  title="請輸入8位電話號碼" required="required"/>
+                            <input type="text" name="tel" id="tel" size="20px" max="8" pattern="^[0-9]{8}$"
+                                title="請輸入8位電話號碼" required="required" /><span class="required-field">*</span>
                         </th>
                     </tr>
                     <tr>
@@ -80,9 +97,8 @@
                             <label for="self-intro">自我介紹：</label>
                         </th>
                         <th>
-                            <input type="text" name="self-intro" id="self-intro" size="30px"
-                                required="required"></textarea>
-                            <span class="required-field">*</span>
+                            <input type="text" name="self-intro" id="self-intro" size="20px"
+                                required="required"></textarea><span class="required-field">*</span>
                         </th>
                     </tr>
                 </table>
@@ -91,6 +107,7 @@
             </form>
         </div>
 
+        <!-- footer -->
         <div id="footer">
             Copyright &copy; WONG Chik On 2020. All rights reserved
         </div>

@@ -6,18 +6,22 @@
     <link rel="icon" href="./src/planet-earth.png">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/methods_style.css" />
+    <script src="https://kit.fontawesome.com/f712179d31.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/script.js"></script>
 </head>
 
 
 <body>
     <div id="container">
+        <!-- header -->
         <div id="header">
             <img src="./src/3816397.jpg" height="100px" width="100px" />
             <h1>保護環境協會</h1>
         </div>
-        <div id="nav">
+        <!-- normal nav -->
+        <div id="n-nav">
             <ul>
                 <li>
                     <a href="index.html">主頁</a>
@@ -33,20 +37,35 @@
                 </li>
             </ul>
         </div>
-
+        <!-- mobile nav -->
+        <div id="m-nav">
+            <a href="index.html" class="active">保護環境協會</a>
+            <div id="dp-nav">
+                <a href="methods.html">保護環境的方法</a>
+                <a href="joinus.html">加入我們</a>
+                <a href="test.html">小小測驗</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="dropdown()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <!-- content part -->
+        <h3>七種保護環境的方法</h3>
         <div class="content">
-            <h3>七種保護環境的方法</h3>
+            
             <ul>
                 <li><b>使用CFL螺旋式螢光省電燈泡</b></li>
                 <p>這些燈泡確實比較貴，但是它們的使用壽命較長，除了可以降低燈泡垃圾產量，同時還可以節省能源，大多CFL省電燈泡比普通燈泡節約75%的能源，長期來說，電費也會降低。</p>
             </ul>
             <ul>
                 <li><b>捐贈二手衣物或物品</b></li>
-                <p>家中常常會有許多不想穿的衣服或是不太使用的物品，若是物況良好，千萬不要嫌麻煩，可以將其捐贈給需要的人，或是一些慈善團體或公益協會，這些協會也許可以出售這些衣服物品以賺取一些營收，不僅可以保護環境、二手物再利用，更是可以為弱勢團體盡一分心力，可說是一舉多得。</p>
+                <p>家中常常會有許多不想穿的衣服或是不太使用的物品，若是物況良好，千萬不要嫌麻煩，可以將其捐贈給需要的人，或是一些慈善團體或公益協會，這些協會也許可以出售這些衣服物品以賺取一些營收，不僅可以保護環境、二手物再利用，更是可以為弱勢團體盡一分心力，可說是一舉多得。
+                </p>
             </ul>
             <ul>
-                <li><b>隨手關閉不使用的設備電源</b></li>
+                <li><b>隨手關閉不使用的設備電源</b></li><span><img class="img1" src="./src/turn-off-lights.jpg"></span>
                 <p>養成隨手關閉不使用設備電源的習慣，像是不看電視時、離開房間時(即使是晚點還會再進來)，這是一個很容易做到的習慣，而且有助於節省大量電費。
+
             </ul>
             </p>
             <ul>
@@ -67,14 +86,15 @@
                 <li><b>雨水再利用</b></li>
                 <p>一般而言，雨水是相當乾淨的水源，除非是空氣污染嚴重的地區。雨水可以再利用，像是沖洗廁所馬桶、澆花…等。</p>
             </ul>
-            
+
         </div>
 
     </div>
 
-    <div id="footer">
-        Copyright &copy; WONG Chik On 2020. All rights reserved
-    </div>
+   <!-- footer -->
+   <div id="footer">
+    Copyright &copy; WONG Chik On 2020. All rights reserved
+</div>
 
     </div>
 
